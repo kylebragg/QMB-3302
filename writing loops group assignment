@@ -1,0 +1,494 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Loops and Practice\n",
+    "\n",
+    "Each question is worth 4 points. 10 questions = 40 points. In all cases full points are given when the code runs and has the correct output. Partial credit will be given for a good try.\n",
+    "\n",
+    "Reflection is worth 10 points."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 1. For each data type below. Create a variable of that type, and briefly (1 line or less) describe the data types properties in the comment above.\n",
+    "    \n",
+    "            Example \n",
+    "             Integers are a whole number (like 2), not a fraction (like 2.5)\n",
+    "             x = 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n",
+      "<class 'float'>\n",
+      "<class 'str'>\n",
+      "<class 'bool'>\n",
+      "<class 'complex'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "# integers are....a whole number, no fraction/decimal\n",
+    "x = 2\n",
+    "print(type(x))\n",
+    "\n",
+    "# floats can be decimals / fractions\n",
+    "y = 7.3\n",
+    "print(type(y))\n",
+    "\n",
+    "# strings consist of characters, although they can have numbers\n",
+    "s = \"hello\"\n",
+    "print(type(s))\n",
+    "\n",
+    "# Booleans are true/false values\n",
+    "b = True\n",
+    "print(type(b))\n",
+    "\n",
+    "# Complex Numbers have a real and imaginary component\n",
+    "c = 5+6j\n",
+    "print(type(c))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 2. Explain and demonstrate the rules regarding variable naming in Python. Explain 4 rules. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-5-6c187be77198>, line 4)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-5-6c187be77198>\"\u001b[0;36m, line \u001b[0;32m4\u001b[0m\n\u001b[0;31m    Variables cant have spaces = y\u001b[0m\n\u001b[0m              ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Example\n",
+    "#Python variable names cannot have a space. You can use this as one of your rules, just change the example. \n",
+    "\n",
+    "Variables cant have spaces = y\n",
+    "\n",
+    "#variable names can't have quotations in them\n",
+    "\n",
+    "x' = 7\n",
+    "\n",
+    "#variable names can be capitalized\n",
+    "\n",
+    "Seven = 7\n",
+    "\n",
+    "#variable names serve as pointers that can point one different direction at a time\n",
+    "\n",
+    "x = 1\n",
+    "x = 2\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 3. Explain and demonstrate what happens when you perform operations (like multiplication or division) across different variable types. Show at least 4 examples. \n",
+    "\n",
+    "    example: string * int\n",
+    "   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# example 1 (you can erase this text repalce it with your own)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# example 2 (you can erase this text repalce it with your own)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# example 3 (you can erase this text repalce it with your own)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# example 4 (you can erase this text repalce it with your own)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 4. Write an if statement that evaluates if a variable (y) is greater than or equal to 100, and prints the result (you can show the result in any way you choose)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "yes, it is\n"
+     ]
+    }
+   ],
+   "source": [
+    "y = 100\n",
+    "if y >= 100:\n",
+    "    print(\"yes, it is\")\n",
+    "else:\n",
+    "    print(\"no, it is not\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 5. Print the following pattern using a for loop\n",
+    "\n",
+    "The pattern is not an error. The first row starts with \"1 1 2\". It is a hard problem, but try your best. If you don't find a solution, then enter a solution for what you do find, don't leave it blank. \n",
+    "\n",
+    "1 1 2   \n",
+    "1 2 3   \n",
+    "1 2 3 4   \n",
+    "1 2 3 4 5   \n",
+    "1 2 3 4 5 6   \n",
+    "1 2 3 4 5 6 7   \n",
+    "1 2 3 4 5 6 7 8   \n",
+    "1 2 3 4 5 6 7 8 9   \n",
+    "1 2 3 4 5 6 7 8 9 10  "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 1 2 \n",
+      "\n",
+      "1 2 3 \n",
+      "\n",
+      "1 2 3 4 \n",
+      "\n",
+      "1 2 3 4 5 \n",
+      "\n",
+      "1 2 3 4 5 6 \n",
+      "\n",
+      "1 2 3 4 5 6 7 \n",
+      "\n",
+      "1 2 3 4 5 6 7 8 \n",
+      "\n",
+      "1 2 3 4 5 6 7 8 9 \n",
+      "\n",
+      "1 2 3 4 5 6 7 8 9 10 \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "row = 0\n",
+    "val = 1\n",
+    "while row < 10:\n",
+    "    val = 1\n",
+    "    while val < (row+2):\n",
+    "        print(val, end =' ')\n",
+    "        val = val + 1\n",
+    "    row = row + 1\n",
+    "    if val != 2:\n",
+    "        print(\"\\n\")\n",
+    "    \n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 6. Given any list of positive values: iterate over the list and print/display numbers that are divisible by 2. Ensure the loop stops if it finds a number greater than 100.  An example list is provided, but your code should work on any list of postive values it is passed, of any length. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "18\n",
+      "28\n",
+      "80\n",
+      "100\n"
+     ]
+    }
+   ],
+   "source": [
+    "#example of a list you can use to test your code\n",
+    "##but you are free to create another list if you like... \n",
+    "evenlist = [2, 4, 18, 19, 28, 37, 55, 79, 80, 100, 102]\n",
+    "\n",
+    "for N in evenlist:\n",
+    "    if N > 100:\n",
+    "        break\n",
+    "    else:\n",
+    "        if N%2==0:\n",
+    "            print(N)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 7. Using a variable 'tminus', a positive integer between 1-10, create a countdown timer that starts at tminus, and ends at 0, printing each integer along the way. At the end, generate a statement (can be anything). "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "9\n",
+      "8\n",
+      "7\n",
+      "6\n",
+      "5\n",
+      "4\n",
+      "3\n",
+      "2\n",
+      "1\n",
+      "0\n",
+      "Time's up!\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write your solution below\n",
+    "\n",
+    "tminus = 10\n",
+    "\n",
+    "while tminus >= 0:\n",
+    "    print(tminus)\n",
+    "    tminus = tminus -1\n",
+    "print(\"Time's up!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 8. Create a function that takes 2 numerical arguments, and performs on operation on them.  Print the result of that operation, explain what the function does. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12\n"
+     ]
+    }
+   ],
+   "source": [
+    "def problemnumber8(x,y):\n",
+    "    print(x+y)\n",
+    "#This function adds the sum of the two arguments given\n",
+    "problemnumber8(5,7)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 9. Create a 'while loop' with a break that will take in a variable 'low' which is less that another variable 'high'. Print every value of low +2, and break when the value is greater than or equal to 'high'.  \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "4\n",
+      "6\n",
+      "8\n",
+      "10\n",
+      "12\n",
+      "14\n"
+     ]
+    }
+   ],
+   "source": [
+    "# write your solution below\n",
+    "\n",
+    "#example:\n",
+    "low = 2\n",
+    "high = 16\n",
+    "\n",
+    "while low < high:\n",
+    "    print(low)\n",
+    "    low = low + 2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 10. Create as many functions as you have team members (1 function per team member, 1 function cell and 1 markdown cell per team member). Seriously...any function! Explain what your function does, and how it might be useful. Demonstrate it's 'usefulness'. If it is not at all useful, explain why your function is essentially useless. Have fun.\n",
+    "\n",
+    "(note: to receive points for this exercise, ALL of the functions below this markdown cell must run. If a function has an error, correct it before submitting).\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "##########################################################################################################\n",
+    "#Joel Davis Example\n",
+    "#My function takes 3 numbers and adds them up. It is an incredibly useful function with many uses\n",
+    "#in ordinary every day lives. Imagine I was in a supermarket, and wanted to sum up the total of 3\n",
+    "#items. I could just whip out my laptop, boot jupyter, run this code, and voila, I have the total price.\n",
+    "#So much easier than carrying a texas instruments calculator with me everywhere I go!\n",
+    "##########################################################################################################\n",
+    "\n",
+    "def addmeup(x, y, z):\n",
+    "    addme = x + y + z\n",
+    "    return addme\n",
+    "    \n",
+    "p = addmeup(2,3,1)\n",
+    "print(p) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "20\n"
+     ]
+    }
+   ],
+   "source": [
+    "##############################\n",
+    "#Kyle Bragg\n",
+    "#My function multiplies its two arguments, which could be useful in calculating the area of a rectangular region.\n",
+    "def area(x,y):\n",
+    "    product = x*y\n",
+    "    return product\n",
+    "a = area(5,4)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Reflection\n",
+    "\n",
+    "This is one submission per team. \n",
+    "\n",
+    "This exercise does not need to be any more than 2-3 paragraphs, you are free to write more if you have more to say! \n",
+    "\n",
+    "\n",
+    "**you do not need to use or follow this prompt. You can write whatever you want here**\n",
+    "\n",
+    "Discuss the course so far: (some prompts below: you can choose one of these or pick your own idea)\n",
+    "    * For this specific assignment, were there any problems that you encounterd? How did you solve them?\n",
+    "    * Summarize your thoughts so far (week 3). Is this too easy? Too hard? Just right?\n",
+    "    * What are some business domains you would like to cover in depth in later weeks? (I have left some space in the course to address some of these, so let me know what you would like to see in terms of business problems and we will incorporate as many as we can)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
